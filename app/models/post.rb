@@ -6,5 +6,5 @@ class Post < ActiveRecord::Base
   validates :summary, length: { maximum: 250 }
 
   validates :category, inclusion: { in: ["Fiction", "Non-Fiction"] }
-    validates_with ClickbaitValidator
+  validates_with ClickbaitValidator
 end
